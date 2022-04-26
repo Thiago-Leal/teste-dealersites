@@ -10,6 +10,8 @@ class RegisterController extends Controller
 {
     public function check_register(Request $request){
 
+        dd('dfhudhudhfu');
+
         $register_hash = $request->cookie('register_hash');
 
         $user = new User();
