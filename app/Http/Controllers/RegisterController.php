@@ -27,8 +27,6 @@ class RegisterController extends Controller
         $user = $register->user;
         $step = $register->step;
 
-        $user->birthday = date("d/m/Y", strtotime($user->birthday));
-
         return view('welcome', compact('user', 'step'));
     }
 }

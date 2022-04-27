@@ -9,7 +9,7 @@
 
 <div class="tab">
   <p><input placeholder="Nome..." oninput="this.className = ''" id="name" value="{!! $user->name !!}" maxlength="100"></p>
-  <p><input placeholder="Data de Nascimento..." oninput="this.className = ''" id="birthday" value="{!! $user->birthday !!}"></p>
+  <p><input placeholder="Data de Nascimento..." oninput="this.className = ''" id="birthday" value="{!! $user->present()->getBirthday !!}"></p>
 </div>
 
 <div class="tab">
